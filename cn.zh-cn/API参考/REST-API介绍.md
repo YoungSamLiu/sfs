@@ -110,86 +110,86 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 <a name="table1986821153312"></a>
 <table><thead align="left"><tr id="row1286841153311"><th class="cellrowborder" valign="top" width="19.74%" id="mcps1.2.5.1.1"><p id="p178680183310"><a name="p178680183310"></a><a name="p178680183310"></a><strong id="b68682163320"><a name="b68682163320"></a><a name="b68682163320"></a>名称</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="26.490000000000002%" id="mcps1.2.5.1.2"><p id="p78688118335"><a name="p78688118335"></a><a name="p78688118335"></a><strong id="b148681111333"><a name="b148681111333"></a><a name="b148681111333"></a>描述</strong></p>
+<th class="cellrowborder" valign="top" width="21.47%" id="mcps1.2.5.1.2"><p id="p78688118335"><a name="p78688118335"></a><a name="p78688118335"></a><strong id="b148681111333"><a name="b148681111333"></a><a name="b148681111333"></a>描述</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="20.119999999999997%" id="mcps1.2.5.1.3"><p id="p58686123316"><a name="p58686123316"></a><a name="p58686123316"></a><strong id="b98684111338"><a name="b98684111338"></a><a name="b98684111338"></a>是否必选</strong></p>
+<th class="cellrowborder" valign="top" width="23.9%" id="mcps1.2.5.1.3"><p id="p58686123316"><a name="p58686123316"></a><a name="p58686123316"></a><strong id="b98684111338"><a name="b98684111338"></a><a name="b98684111338"></a>是否必选</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="33.650000000000006%" id="mcps1.2.5.1.4"><p id="p48681314333"><a name="p48681314333"></a><a name="p48681314333"></a><strong id="b48688114333"><a name="b48688114333"></a><a name="b48688114333"></a>示例</strong></p>
+<th class="cellrowborder" valign="top" width="34.89%" id="mcps1.2.5.1.4"><p id="p48681314333"><a name="p48681314333"></a><a name="p48681314333"></a><strong id="b48688114333"><a name="b48688114333"></a><a name="b48688114333"></a>示例</strong></p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row1286812113317"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p18685112332"><a name="p18685112332"></a><a name="p18685112332"></a>X-Sdk-Date</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p158681113337"><a name="p158681113337"></a><a name="p158681113337"></a>请求的发生时间，格式为YYYYMMDD'T'HHMMSS'Z'。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p158681113337"><a name="p158681113337"></a><a name="p158681113337"></a>请求的发生时间，格式为YYYYMMDD'T'HHMMSS'Z'。</p>
 <p id="p1286816117332"><a name="p1286816117332"></a><a name="p1286816117332"></a>取值为当前系统的GMT时间。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p48681111339"><a name="p48681111339"></a><a name="p48681111339"></a>否</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p48681111339"><a name="p48681111339"></a><a name="p48681111339"></a>否</p>
 <p id="p1886851113314"><a name="p1886851113314"></a><a name="p1886851113314"></a>使用AK/SK认证时该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p7868131153315"><a name="p7868131153315"></a><a name="p7868131153315"></a>20150907T101459Z</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p7868131153315"><a name="p7868131153315"></a><a name="p7868131153315"></a>20150907T101459Z</p>
 </td>
 </tr>
 <tr id="row1486813163318"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p586816117339"><a name="p586816117339"></a><a name="p586816117339"></a>Authorization</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p1986841143311"><a name="p1986841143311"></a><a name="p1986841143311"></a>签名认证信息。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p1986841143311"><a name="p1986841143311"></a><a name="p1986841143311"></a>签名认证信息。</p>
 <p id="p986831133320"><a name="p986831133320"></a><a name="p986831133320"></a>该值来源于请求签名结果。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p48686133312"><a name="p48686133312"></a><a name="p48686133312"></a>否</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p48686133312"><a name="p48686133312"></a><a name="p48686133312"></a>否</p>
 <p id="p186814103317"><a name="p186814103317"></a><a name="p186814103317"></a>使用AK/SK认证时该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p10868121143318"><a name="p10868121143318"></a><a name="p10868121143318"></a>SDK-HMAC-SHA256 Credential=ZIRRKMTWPTQFQI1WKNKB/20150907//ec2/sdk_request, SignedHeaders=content-type;host;x-sdk-date, Signature=55741b610f3c9fa3ae40b5a8021ebf7ebc2a28a603fc62d25cb3bfe6608e1994</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p10868121143318"><a name="p10868121143318"></a><a name="p10868121143318"></a>SDK-HMAC-SHA256 Credential=ZIRRKMTWPTQFQI1WKNKB/20150907//ec2/sdk_request, SignedHeaders=content-type;host;x-sdk-date, Signature=55741b610f3c9fa3ae40b5a8021ebf7ebc2a28a603fc62d25cb3bfe6608e1994</p>
 </td>
 </tr>
 <tr id="row1286861153311"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p2086813163316"><a name="p2086813163316"></a><a name="p2086813163316"></a>Host</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p58681814333"><a name="p58681814333"></a><a name="p58681814333"></a>请求的服务器信息，从服务API的URL中获取。值为hostname[:port]。端口缺省时使用默认的端口，https的默认端口为443。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p58681814333"><a name="p58681814333"></a><a name="p58681814333"></a>请求的服务器信息，从服务API的URL中获取。值为hostname[:port]。端口缺省时使用默认的端口，https的默认端口为443。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p886815123319"><a name="p886815123319"></a><a name="p886815123319"></a>否</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p886815123319"><a name="p886815123319"></a><a name="p886815123319"></a>否</p>
 <p id="p386811116333"><a name="p386811116333"></a><a name="p386811116333"></a>使用AK/SK认证时该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p486814118330"><a name="p486814118330"></a><a name="p486814118330"></a>code.test.com</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p486814118330"><a name="p486814118330"></a><a name="p486814118330"></a>code.test.com</p>
 <p id="p5868161163317"><a name="p5868161163317"></a><a name="p5868161163317"></a>or</p>
 <p id="p786841123315"><a name="p786841123315"></a><a name="p786841123315"></a>code.test.com:443</p>
 </td>
 </tr>
 <tr id="row386818143313"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p118689123320"><a name="p118689123320"></a><a name="p118689123320"></a>Content-Type</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p1486815116337"><a name="p1486815116337"></a><a name="p1486815116337"></a>发送的实体的MIME类型。推荐用户默认使用application/json，如果API是对象、镜像上传等接口，媒体类型可按照流类型的不同进行确定。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p1486815116337"><a name="p1486815116337"></a><a name="p1486815116337"></a>发送的实体的MIME类型。推荐用户默认使用application/json，如果API是对象、镜像上传等接口，媒体类型可按照流类型的不同进行确定。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p1086812114335"><a name="p1086812114335"></a><a name="p1086812114335"></a>是</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p1086812114335"><a name="p1086812114335"></a><a name="p1086812114335"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p1186841163310"><a name="p1186841163310"></a><a name="p1186841163310"></a>application/json</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p1186841163310"><a name="p1186841163310"></a><a name="p1186841163310"></a>application/json</p>
 </td>
 </tr>
 <tr id="row11868419337"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p178687119330"><a name="p178687119330"></a><a name="p178687119330"></a>Content-Length</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p178681813332"><a name="p178681813332"></a><a name="p178681813332"></a>请求body长度，单位为Byte。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p178681813332"><a name="p178681813332"></a><a name="p178681813332"></a>请求body长度，单位为Byte。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p18687183316"><a name="p18687183316"></a><a name="p18687183316"></a>否</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p18687183316"><a name="p18687183316"></a><a name="p18687183316"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p148689110334"><a name="p148689110334"></a><a name="p148689110334"></a>3495</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p148689110334"><a name="p148689110334"></a><a name="p148689110334"></a>3495</p>
 </td>
 </tr>
 <tr id="row2868171143313"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p586815118338"><a name="p586815118338"></a><a name="p586815118338"></a>X-Project-Id</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p1586811163312"><a name="p1586811163312"></a><a name="p1586811163312"></a>project id，项目编号。请参考<a href="获取项目ID.md">获取项目ID</a>章节获取项目编号。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p1586811163312"><a name="p1586811163312"></a><a name="p1586811163312"></a>project id，项目编号。请参考<a href="获取项目ID.md">获取项目ID</a>章节获取项目编号。</p>
 <p id="p178681018333"><a name="p178681018333"></a><a name="p178681018333"></a>如果是DeC的请求或者多project的请求则必须传入project id。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p886812110335"><a name="p886812110335"></a><a name="p886812110335"></a>否</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p886812110335"><a name="p886812110335"></a><a name="p886812110335"></a>否</p>
 <p id="p128682103311"><a name="p128682103311"></a><a name="p128682103311"></a>如果是专属云场景采用AK/SK 认证方式的接口请求或者多project场景采用AK/SK认证的接口请求则该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p198684143315"><a name="p198684143315"></a><a name="p198684143315"></a>e9993fc787d94b6c886cbaa340f9c0f4</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p198684143315"><a name="p198684143315"></a><a name="p198684143315"></a>e9993fc787d94b6c886cbaa340f9c0f4</p>
 </td>
 </tr>
 <tr id="row188688113337"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="p198684111335"><a name="p198684111335"></a><a name="p198684111335"></a>X-Auth-Token</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="p1086851153317"><a name="p1086851153317"></a><a name="p1086851153317"></a>用户Token。</p>
+<td class="cellrowborder" valign="top" width="21.47%" headers="mcps1.2.5.1.2 "><p id="p1086851153317"><a name="p1086851153317"></a><a name="p1086851153317"></a>用户Token。</p>
 <p id="p15868417337"><a name="p15868417337"></a><a name="p15868417337"></a>获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="p4868514338"><a name="p4868514338"></a><a name="p4868514338"></a>否</p>
+<td class="cellrowborder" valign="top" width="23.9%" headers="mcps1.2.5.1.3 "><p id="p4868514338"><a name="p4868514338"></a><a name="p4868514338"></a>否</p>
 <p id="p986818114339"><a name="p986818114339"></a><a name="p986818114339"></a>使用Token认证时该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="p168689113318"><a name="p168689113318"></a><a name="p168689113318"></a>注：以下仅为Token示例片段MIIPAgYJKoZIhvcNAQcCoIIO8zCCDu8CAQExDTALBglghkgBZQMEAgEwgg1QBgkqhkiG9w0BBwGggg1BBIINPXsidG9rZ</p>
+<td class="cellrowborder" valign="top" width="34.89%" headers="mcps1.2.5.1.4 "><p id="p168689113318"><a name="p168689113318"></a><a name="p168689113318"></a>注：以下仅为Token示例片段MIIPAgYJKoZIhvcNAQcCoIIO8zCCDu8CAQExDTALBglghkgBZQMEAgEwgg1QBgkqhkiG9w0BBwGggg1BBIINPXsidG9rZ</p>
 </td>
 </tr>
 </tbody>
