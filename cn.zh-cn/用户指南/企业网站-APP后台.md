@@ -28,7 +28,7 @@
 2.  在页面右上角单击“创建文件系统“。
 3.  在创建文件系统弹出框，根据界面提示配置参数。
 4.  配置完成后，阅读并勾选服务协议，单击“确定”，完成文件系统创建。
-5.  Linux系统的弹性云服务器挂载步骤参见[挂载文件系统到云服务器](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0034428728.html)，Windows系统的挂载参见[挂载文件系统到云服务器（Windows）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0105224109.md)。
+5.  Linux系统的弹性云服务器挂载步骤参见[挂载文件系统到云服务器（Linux）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0034428728.html)，Windows系统的挂载参见[挂载文件系统到云服务器（Windows）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0105224109.md)。
 6.  登录头节点将需要上传的网站文件上传到挂载的文件系统。
 7.  启动Web Server。
 

@@ -25,25 +25,25 @@
     **表 1**  参数说明
 
     <a name="table99851739124510"></a>
-    <table><thead align="left"><tr id="row18986439164514"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p13986133914512"><a name="p13986133914512"></a><a name="p13986133914512"></a>参数</p>
+    <table><thead align="left"><tr id="row18986439164514"><th class="cellrowborder" valign="top" width="27.889999999999997%" id="mcps1.2.3.1.1"><p id="p13986133914512"><a name="p13986133914512"></a><a name="p13986133914512"></a>参数</p>
     </th>
-    <th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="p2986193915452"><a name="p2986193915452"></a><a name="p2986193915452"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="72.11%" id="mcps1.2.3.1.2"><p id="p2986193915452"><a name="p2986193915452"></a><a name="p2986193915452"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row159865391455"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p4986163914454"><a name="p4986163914454"></a><a name="p4986163914454"></a>名称</p>
+    <tbody><tr id="row159865391455"><td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.3.1.1 "><p id="p4986163914454"><a name="p4986163914454"></a><a name="p4986163914454"></a>名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p398663944512"><a name="p398663944512"></a><a name="p398663944512"></a>已添加的VPC的名称，例如：vpc-4040。</p>
-    </td>
-    </tr>
-    <tr id="row1398615399451"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1998693919458"><a name="p1998693919458"></a><a name="p1998693919458"></a>授权IP数量</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p2986939164516"><a name="p2986939164516"></a><a name="p2986939164516"></a>已经添加的IP地址或IP地址段的个数。</p>
+    <td class="cellrowborder" valign="top" width="72.11%" headers="mcps1.2.3.1.2 "><p id="p398663944512"><a name="p398663944512"></a><a name="p398663944512"></a>已添加的VPC的名称，例如：vpc-4040。</p>
     </td>
     </tr>
-    <tr id="row498693904514"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1998643964514"><a name="p1998643964514"></a><a name="p1998643964514"></a>操作</p>
+    <tr id="row1398615399451"><td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.3.1.1 "><p id="p1998693919458"><a name="p1998693919458"></a><a name="p1998693919458"></a>授权IP数量</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p55891167164624"><a name="p55891167164624"></a><a name="p55891167164624"></a>包含“添加”和“删除”操作。“添加”即添加授权的IP地址，包括对授权的IP地址、读/写权限、用户权限、用户root权限及优先级的设置，请参见<a href="#table1242824684814">表2</a>。“删除”即删除该VPC。</p>
+    <td class="cellrowborder" valign="top" width="72.11%" headers="mcps1.2.3.1.2 "><p id="p2986939164516"><a name="p2986939164516"></a><a name="p2986939164516"></a>已经添加的IP地址或IP地址段的个数。</p>
+    </td>
+    </tr>
+    <tr id="row498693904514"><td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.3.1.1 "><p id="p1998643964514"><a name="p1998643964514"></a><a name="p1998643964514"></a>操作</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="72.11%" headers="mcps1.2.3.1.2 "><p id="p55891167164624"><a name="p55891167164624"></a><a name="p55891167164624"></a>包含“添加”和“删除”操作。“添加”即添加授权的IP地址，包括对授权的IP地址、读/写权限、用户权限、用户root权限及优先级的设置，请参见<a href="#table1242824684814">表2</a>。“删除”即删除该VPC。</p>
     </td>
     </tr>
     </tbody>
