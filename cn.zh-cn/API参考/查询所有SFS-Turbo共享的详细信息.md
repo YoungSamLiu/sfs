@@ -162,13 +162,6 @@
     <td class="cellrowborder" valign="top" width="47.88478847884788%" headers="mcps1.1.4.1.3 "><p id="p5231855111916"><a name="p5231855111916"></a><a name="p5231855111916"></a>SFS Turbo实例的动作，当前为预留。</p>
     </td>
     </tr>
-    <tr id="row523105531917"><td class="cellrowborder" valign="top" width="26.102610261026104%" headers="mcps1.1.4.1.1 "><p id="p5231255131917"><a name="p5231255131917"></a><a name="p5231255131917"></a>is_frozen</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="26.01260126012601%" headers="mcps1.1.4.1.2 "><p id="p152313550191"><a name="p152313550191"></a><a name="p152313550191"></a>string</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="47.88478847884788%" headers="mcps1.1.4.1.3 "><p id="p3231855141911"><a name="p3231855141911"></a><a name="p3231855141911"></a>所在账户是否冻结。</p>
-    </td>
-    </tr>
     <tr id="row19231155101916"><td class="cellrowborder" valign="top" width="26.102610261026104%" headers="mcps1.1.4.1.1 "><p id="p15239558198"><a name="p15239558198"></a><a name="p15239558198"></a>share_type</p>
     </td>
     <td class="cellrowborder" valign="top" width="26.01260126012601%" headers="mcps1.1.4.1.2 "><p id="p1123055101912"><a name="p1123055101912"></a><a name="p1123055101912"></a>string</p>
@@ -271,7 +264,6 @@
                 "region": "southchina",
                 "created_at": "2018-11-19T04:02:03",
                 "export_location": "192.168.0.90:/",
-                "is_frozen": "0",
                 "action_progress": {},
                 "share_type": "STANDARD",
                 "sub_status": "330",
@@ -294,7 +286,6 @@
                 "region": "southchina",
                 "created_at": "2018-11-15T02:32:10",
                 "export_location": "192.168.0.197:/",
-                "is_frozen": "0",
                 "action_progress": {},
                 "share_type": "STANDARD",
                 "availability_zone": "az1.dc1",
