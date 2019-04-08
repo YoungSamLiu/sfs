@@ -1,4 +1,4 @@
-# 管理VPC<a name="ZH-CN_TOPIC_0103068359"></a>
+# 配置VPC<a name="ZH-CN_TOPIC_0103068359"></a>
 
 网络ACL是对一个或多个子网的访问控制策略系统，根据与子网关联的入站/出站规则，判断数据包是否被允许流入/流出关联子网。一个文件系统最多可以添加20个可用的VPC，对于添加的VPC所创建的ACL规则总和不能超过400个。添加VPC时会自动添加默认IP地址0.0.0.0/0。
 
@@ -75,13 +75,15 @@
     </tr>
     <tr id="row4428104634818"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.3.1.1 "><p id="p242894610484"><a name="p242894610484"></a><a name="p242894610484"></a>用户权限</p>
     </td>
-    <td class="cellrowborder" valign="top" width="75%" headers="mcps1.2.3.1.2 "><p id="p144285462480"><a name="p144285462480"></a><a name="p144285462480"></a>分为all_squash和no_all_squash。默认为“no_all_squash”。</p>
+    <td class="cellrowborder" valign="top" width="75%" headers="mcps1.2.3.1.2 "><p id="p144285462480"><a name="p144285462480"></a><a name="p144285462480"></a>设置是否保留共享目录的UID和GID。默认为“no_all_squash”。</p>
+    <a name="ul1829105884712"></a><a name="ul1829105884712"></a><ul id="ul1829105884712"><li>all_squash：共享文件的UID（User ID）和GID（Group ID）映射给nobody用户，适合公共目录。</li><li>no_all_squash：保留共享文件的UID和GID。</li></ul>
     <p id="p169142811244"><a name="p169142811244"></a><a name="p169142811244"></a>CIFS类型的文件系统添加授权地址时，不涉及该参数。</p>
     </td>
     </tr>
     <tr id="row1942884614813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.3.1.1 "><p id="p442816468484"><a name="p442816468484"></a><a name="p442816468484"></a>用户root权限</p>
     </td>
-    <td class="cellrowborder" valign="top" width="75%" headers="mcps1.2.3.1.2 "><p id="p19428446204818"><a name="p19428446204818"></a><a name="p19428446204818"></a>分为root_squash和no_root_squash。默认为“no_root_squash”。</p>
+    <td class="cellrowborder" valign="top" width="75%" headers="mcps1.2.3.1.2 "><p id="p19428446204818"><a name="p19428446204818"></a><a name="p19428446204818"></a>设置是否允许客户端的root权限。默认为“no_root_squash”。</p>
+    <a name="ul202950116498"></a><a name="ul202950116498"></a><ul id="ul202950116498"><li>root_squash：不允许客户端以root用户访问，客户端使用root用户访问时映射为nobody用户。</li><li>no_root_squash：允许客户端以root用户访问，root用户具有根目录的完全控制访问权限。</li></ul>
     <p id="p99331427192715"><a name="p99331427192715"></a><a name="p99331427192715"></a>CIFS类型的文件系统添加授权地址时，不涉及该参数。</p>
     </td>
     </tr>
