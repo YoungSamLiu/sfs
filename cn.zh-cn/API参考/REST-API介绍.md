@@ -38,12 +38,12 @@ REST API请求/响应可以分为如下部分：
 </tr>
 <tr id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_row444414692513"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p7444194610257"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p7444194610257"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p7444194610257"></a>Endpoint</p>
 </td>
-<td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p244474613259"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p244474613259"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p244474613259"></a>指定承载REST服务端点的服务器域名或IP，从<a href="http://developer.huaweicloud.com/dev/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>获取。</p>
+<td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p244474613259"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p244474613259"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p244474613259"></a>指定承载REST服务端点的服务器域名或IP，从<a href="https://developer.huaweicloud.com/dev/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>获取。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_row1744454612520"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p14442468257"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p14442468257"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p14442468257"></a>resource-path</p>
 </td>
-<td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p1844412467258"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p1844412467258"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p1844412467258"></a>资源路径，也即API访问路径。从具体接口的URI模块获取，例如“v3/auth/tokens”。</p>
+<td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p1844412467258"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p1844412467258"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p1844412467258"></a>资源路径，也即API访问路径。从具体接口的URI模块获取，例如“/v1/{project_id}/vpcs/{vpc_id}”。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_row184441346152515"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p4444154692516"><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p4444154692516"></a><a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_p4444154692516"></a>query-string</p>
@@ -184,7 +184,7 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 <tr id="zh-cn_topic_0121682347_row188688113337"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0121682347_p198684111335"><a name="zh-cn_topic_0121682347_p198684111335"></a><a name="zh-cn_topic_0121682347_p198684111335"></a>X-Auth-Token</p>
 </td>
 <td class="cellrowborder" valign="top" width="26.490000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0121682347_p1086851153317"><a name="zh-cn_topic_0121682347_p1086851153317"></a><a name="zh-cn_topic_0121682347_p1086851153317"></a>用户Token。</p>
-<p id="zh-cn_topic_0121682347_p15868417337"><a name="zh-cn_topic_0121682347_p15868417337"></a><a name="zh-cn_topic_0121682347_p15868417337"></a>获取Token，请参考《统一身份认证服务API参考》的“获取用户Token”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。</p>
+<p id="zh-cn_topic_0121682347_p15868417337"><a name="zh-cn_topic_0121682347_p15868417337"></a><a name="zh-cn_topic_0121682347_p15868417337"></a>获取Token，请参考《统一身份认证服务API参考》的“<a href="https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845583.html" target="_blank" rel="noopener noreferrer">获取用户Token</a>”章节。请求响应成功后在响应消息头中包含的“X-Subject-Token”的值即为Token值。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0121682347_p4868514338"><a name="zh-cn_topic_0121682347_p4868514338"></a><a name="zh-cn_topic_0121682347_p4868514338"></a>否</p>
 <p id="zh-cn_topic_0121682347_p986818114339"><a name="zh-cn_topic_0121682347_p986818114339"></a><a name="zh-cn_topic_0121682347_p986818114339"></a>使用Token认证时该字段必选。</p>
@@ -196,7 +196,7 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 </tbody>
 </table>
 
-## 请求消息体<a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_section1437471411"></a>
+## 请求消息体（可选）<a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_section1437471411"></a>
 
 该部分可选。请求消息体通常以结构化格式（如JSON或XML）发出，与请求消息头中Content-Type对应，传递除请求消息头之外的内容。
 
@@ -247,7 +247,7 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
     </table>
 
 
-## 响应消息体<a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_section2045571671419"></a>
+## 响应消息体（可选）<a name="zh-cn_topic_0121682347_zh-cn_topic_0113746487_section2045571671419"></a>
 
 该部分可选。响应消息体通常以结构化格式（如JSON或XML）返回，与响应消息头中Content-Type对应，传递除响应消息头之外的内容。
 
