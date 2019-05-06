@@ -40,7 +40,7 @@ Linux操作系统的弹性云服务器默认只能通过root帐号使用mount命
     </thead>
     <tbody><tr id="row074372114417"><td class="cellrowborder" valign="top" width="17.080000000000002%" headers="mcps1.2.3.1.1 "><p id="p13301182412477"><a name="p13301182412477"></a><a name="p13301182412477"></a>共享路径</p>
     </td>
-    <td class="cellrowborder" valign="top" width="82.92%" headers="mcps1.2.3.1.2 "><p id="p173036243476"><a name="p173036243476"></a><a name="p173036243476"></a>SFS容量型的格式为：文件系统域名:/路径，例如：example.com:/share-xxx。SFS Turbo文件系统的格式为：文件系统IP:/，例如192.168.0.0:/。</p>
+    <td class="cellrowborder" valign="top" width="82.92%" headers="mcps1.2.3.1.2 "><p id="p173036243476"><a name="p173036243476"></a><a name="p173036243476"></a>SFS文件系统的格式为：文件系统域名:/路径，例如：example.com:/share-xxx。SFS Turbo文件系统的格式为：文件系统IP:/，例如192.168.0.0:/。</p>
     <div class="note" id="note1931112414478"><a name="note1931112414478"></a><a name="note1931112414478"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p12312112413478"><a name="p12312112413478"></a><a name="p12312112413478"></a>x是数字或字母。</p>
     <p id="p203122243478"><a name="p203122243478"></a><a name="p203122243478"></a>由于共享路径名称较长，需要拉宽该栏以便完整显示。</p>
     </div></div>

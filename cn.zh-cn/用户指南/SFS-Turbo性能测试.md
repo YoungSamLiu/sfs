@@ -1,6 +1,6 @@
 # SFS Turbo性能测试<a name="ZH-CN_TOPIC_0161965076"></a>
 
-fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行吞吐和 IOPS 的性能测试。
+fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行吞吐量和 IOPS的性能测试。
 
 ## 前提条件<a name="section77406575205"></a>
 
@@ -8,7 +8,7 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 
 ## 注意和说明<a name="section7725135712610"></a>
 
-测试性能依赖client和server之间的网络带宽。
+测试性能依赖client和server之间的网络带宽及文件系统的容量大小。
 
 ## 安装fio<a name="section4973528165614"></a>
 
@@ -27,9 +27,64 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
     **fio --version**
 
 
+## 文件系统性能数据<a name="section57831624194619"></a>
+
+SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指标数据参见[表1](#table1576820433218)。
+
+**表 1**  性能数据表
+
+<a name="table1576820433218"></a>
+<table><thead align="left"><tr id="row187694463212"><th class="cellrowborder" valign="top" width="24.771012931034488%" id="mcps1.2.4.1.1"><p id="p1776984193217"><a name="p1776984193217"></a><a name="p1776984193217"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="37.796336206896555%" id="mcps1.2.4.1.2"><p id="p9769184193210"><a name="p9769184193210"></a><a name="p9769184193210"></a>SFS Turbo标准型</p>
+</th>
+<th class="cellrowborder" valign="top" width="37.43265086206897%" id="mcps1.2.4.1.3"><p id="p1176964123215"><a name="p1176964123215"></a><a name="p1176964123215"></a>SFS Turbo性能型</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1176917414323"><td class="cellrowborder" valign="top" width="24.771012931034488%" headers="mcps1.2.4.1.1 "><p id="p197699418320"><a name="p197699418320"></a><a name="p197699418320"></a>最大容量</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p3769134133211"><a name="p3769134133211"></a><a name="p3769134133211"></a>32TB</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p97695413212"><a name="p97695413212"></a><a name="p97695413212"></a>32TB</p>
+</td>
+</tr>
+<tr id="row18769145324"><td class="cellrowborder" valign="top" width="24.771012931034488%" headers="mcps1.2.4.1.1 "><p id="p1776913423218"><a name="p1776913423218"></a><a name="p1776913423218"></a>最大IOPS</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p147696411323"><a name="p147696411323"></a><a name="p147696411323"></a>5000</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p776964123213"><a name="p776964123213"></a><a name="p776964123213"></a>30000</p>
+</td>
+</tr>
+<tr id="row176912453218"><td class="cellrowborder" valign="top" width="24.771012931034488%" headers="mcps1.2.4.1.1 "><p id="p376964113212"><a name="p376964113212"></a><a name="p376964113212"></a>最大吞吐量</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p1976915403220"><a name="p1976915403220"></a><a name="p1976915403220"></a>150 MB/s</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p207691444323"><a name="p207691444323"></a><a name="p207691444323"></a>350 MB/s</p>
+</td>
+</tr>
+<tr id="row737513375331"><td class="cellrowborder" valign="top" width="24.771012931034488%" headers="mcps1.2.4.1.1 "><p id="p1237612378335"><a name="p1237612378335"></a><a name="p1237612378335"></a>IOPS性能计算公式</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p73761737193320"><a name="p73761737193320"></a><a name="p73761737193320"></a>IOPS = min (5000, 1200 + 6 × 容量)</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p737643723316"><a name="p737643723316"></a><a name="p737643723316"></a>IOPS = min (30000, 1500 + 50 × 容量)</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**IOPS性能计算公式举例说明**
+
+单个文件系统IOPS性能 =“最大IOPS”与“基线IOPS + 每GB文件系统的IOPS × 文件系统容量”的最小值。
+
+以SFS Turbo性能型文件系统为例，单个SFS Turbo性能型文件系统的最大IOPS为30000。
+
+-   假如SFS Turbo性能型文件系统容量为100 GB，则该文件系统IOPS性能 = min \(30000, 1500 + 50 × 100 \)，取30000与6500中的最小值，即该文件系统的IOPS性能为6500。
+-   假如SFS Turbo性能型文件系统容量为1000 GB，则该文件系统IOPS性能 = min \(30000, 1500 + 50 × 1000 \)，取30000与51500中的最小值，即该文件系统的IOPS性能为30000。
+
 ## 通用测试配置样例<a name="section4601617717"></a>
 
-本文以SFS Turbo性能型，云服务器规格如下为例说明，容量型测试数据参考官方文档。
+本文以SFS Turbo性能型，云服务器规格如下为例说明。
 
 规格：通用计算增强型 | c3.xlarge.4 | 4vCPUs | 16GB
 
@@ -40,6 +95,9 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 -   fio命令：
 
     **fio --randrepeat=1 --ioengine=libaio --name=test -output=output.log --direct=1 --filename=_/mnt/nfs/test\_fio_  --bs=4k --iodepth=128 --size=10240M --readwrite=rw --rwmixwrite=30 --fallocate=none**
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >其中，“**_/mnt/nfs/test\_fio_**”为待测试的目标文件的挂载路径，需具体到文件名，即这里要测试的是“**_/mnt/nfs_**”目录下的“**_test\_fio_**”文件，请根据实际填写。  
 
 -   fio结果：
 
@@ -52,6 +110,9 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 
     **fio --randrepeat=1 --ioengine=libaio --name=test -output=output.log --direct=1 --filename=_/mnt/nfs/test\_fio_  --bs=4k --iodepth=128 --size=10240M --readwrite=rw --rwmixwrite=70 --fallocate=none**
 
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >其中，“**_/mnt/nfs/test\_fio_**”为待测试的目标文件的挂载路径，需具体到文件名，即这里要测试的是“**_/mnt/nfs_**”目录下的“**_test\_fio_**”文件，请根据实际填写。  
+
 -   fio结果：
 
     ![](figures/性能测试3比7.png)
@@ -63,6 +124,9 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 
     **fio --randrepeat=1 --ioengine=libaio --name=test -output=output.log --direct=1 --filename=_/mnt/sfs-turbo/test\_fio_  --bs=4k --iodepth=128 --size=10240M --readwrite=read --fallocate=none**
 
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >其中，“**_/mnt/sfs-turbo/test\_fio_**”为待测试的目标文件的挂载路径，需具体到文件名，即这里要测试的是“**_/mnt/sfs-turbo_**”目录下的“**_test\_fio_**”文件，请根据实际填写。  
+
 -   fio结果：
 
 ![](figures/性能测试读IOPS.png)
@@ -72,6 +136,9 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 -   fio命令：
 
     **fio --randrepeat=1 --ioengine=libaio --name=test -output=output.log --direct=1 --filename=_/mnt/sfs-turbo/test\_fio_  --bs=4k --iodepth=128 --size=10240M --readwrite=write--fallocate=none**
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >其中，“**_/mnt/sfs-turbo/test\_fio_**”为待测试的目标文件的挂载路径，需具体到文件名，即这里要测试的是“**_/mnt/sfs-turbo_**”目录下的“**_test\_fio_**”文件，请根据实际填写。  
 
 -   fio结果：
 
@@ -84,6 +151,9 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 
     **fio --randrepeat=1 --ioengine=libaio --name=test -output=output.log --direct=1 --filename=_/mnt/sfs-turbo/test\_fio_  --bs=1M --iodepth=128 --size=10240M --readwrite=read--fallocate=none**
 
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >其中，“**_/mnt/sfs-turbo/test\_fio_**”为待测试的目标文件的挂载路径，需具体到文件名，即这里要测试的是“**_/mnt/sfs-turbo_**”目录下的“**_test\_fio_**”文件，请根据实际填写。  
+
 -   fio结果：
 
     ![](figures/性能测试读带宽.png)
@@ -94,6 +164,9 @@ fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行�
 -   fio命令：
 
     **fio --randrepeat=1 --ioengine=libaio --name=test -output=output.log --direct=1 --filename=_/mnt/sfs-turbo/test\_fio_  --bs=1M --iodepth=128 --size=10240M --readwrite=write--fallocate=none**
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >其中，“**_/mnt/sfs-turbo/test\_fio_**”为待测试的目标文件的挂载路径，需具体到文件名，即这里要测试的是“**_/mnt/sfs-turbo_**”目录下的“**_test\_fio_**”文件，请根据实际填写。  
 
 -   fio结果：
 
