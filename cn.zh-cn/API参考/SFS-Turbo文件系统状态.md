@@ -1,4 +1,4 @@
-# SFS Turbo文件系统状态<a name="ZH-CN_TOPIC_0136817757"></a>
+# SFS Turbo文件系统状态<a name="ZH-CN_TOPIC_0171853672"></a>
 
 -   SFS Turbo文件系统状态要素说明
 
@@ -12,11 +12,6 @@
     <tbody><tr id="row48923782"><td class="cellrowborder" valign="top" width="36.36%" headers="mcps1.1.3.1.1 "><p id="p3403443"><a name="p3403443"></a><a name="p3403443"></a>100</p>
     </td>
     <td class="cellrowborder" valign="top" width="63.63999999999999%" headers="mcps1.1.3.1.2 "><p id="p7243456"><a name="p7243456"></a><a name="p7243456"></a>CREATING，正在创建。</p>
-    </td>
-    </tr>
-    <tr id="row65191106"><td class="cellrowborder" valign="top" width="36.36%" headers="mcps1.1.3.1.1 "><p id="p45988227"><a name="p45988227"></a><a name="p45988227"></a>150</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="63.63999999999999%" headers="mcps1.1.3.1.2 "><p id="p34058872"><a name="p34058872"></a><a name="p34058872"></a>AVAILABLE，可用状态，SFS Turbo文件系统不可挂载。</p>
     </td>
     </tr>
     <tr id="row38094393"><td class="cellrowborder" valign="top" width="36.36%" headers="mcps1.1.3.1.1 "><p id="p65747032"><a name="p65747032"></a><a name="p65747032"></a>200</p>

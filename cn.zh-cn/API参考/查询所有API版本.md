@@ -1,8 +1,14 @@
-# 查询所有API版本<a name="ZH-CN_TOPIC_0093905226"></a>
+# 查询所有API版本<a name="ZH-CN_TOPIC_0171853658"></a>
 
 ## 功能介绍<a name="section922844914513"></a>
 
-查询所有API版本。
+查询SFS当前所有可用版本。
+
+为了支持功能不断扩展，SFS API支持版本号区分。弹性文件服务有两种形式的版本号：
+
+主版本号：具有独立的url，例如v1和v2
+
+微版本号：通过Http请求头“X-Openstack-Manila-Api-Version：微版本号”来使用，例如：X-Openstack-Manila-Api-Version：2.4
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >该接口无需鉴权。  
@@ -14,7 +20,7 @@
 
 无
 
-## 请求<a name="section5063604914513"></a>
+## 请求消息<a name="section5063604914513"></a>
 
 -   参数说明
 
@@ -22,10 +28,10 @@
 
 -   请求样例
 
-    无
+    GET https://\{endpoint\}/
 
 
-## 响应<a name="section6408307814513"></a>
+## 响应消息<a name="section6408307814513"></a>
 
 -   参数说明
 
@@ -40,9 +46,9 @@
     </thead>
     <tbody><tr id="row2349088414513"><td class="cellrowborder" valign="top" width="19.72%" headers="mcps1.1.4.1.1 "><p id="p2371346714513"><a name="p2371346714513"></a><a name="p2371346714513"></a>versions</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.54%" headers="mcps1.1.4.1.2 "><p id="p2571578314513"><a name="p2571578314513"></a><a name="p2571578314513"></a>list&lt;version&gt;</p>
+    <td class="cellrowborder" valign="top" width="22.54%" headers="mcps1.1.4.1.2 "><p id="p2571578314513"><a name="p2571578314513"></a><a name="p2571578314513"></a>Array of objects</p>
     </td>
-    <td class="cellrowborder" valign="top" width="57.74%" headers="mcps1.1.4.1.3 "><p id="p1868846815102"><a name="p1868846815102"></a><a name="p1868846815102"></a>所有可用的API版本列表对象。</p>
+    <td class="cellrowborder" valign="top" width="57.74%" headers="mcps1.1.4.1.3 "><p id="p1868846815102"><a name="p1868846815102"></a><a name="p1868846815102"></a>所有可用的API版本列表对象，包含v1和v2。</p>
     </td>
     </tr>
     </tbody>
@@ -62,45 +68,115 @@
     </thead>
     <tbody><tr id="row5473431214513"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p429429114513"><a name="p429429114513"></a><a name="p429429114513"></a>id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p5623047814513"><a name="p5623047814513"></a><a name="p5623047814513"></a>string</p>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p5623047814513"><a name="p5623047814513"></a><a name="p5623047814513"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p5837483014513"><a name="p5837483014513"></a><a name="p5837483014513"></a>所使用版本的公用名称。</p>
     </td>
     </tr>
+    <tr id="row124101142184120"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p1841116421417"><a name="p1841116421417"></a><a name="p1841116421417"></a>updated</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p5411114210413"><a name="p5411114210413"></a><a name="p5411114210413"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p7411114214418"><a name="p7411114214418"></a><a name="p7411114214418"></a>接口最后修改的UTC时间，格式为YYYY-MM-DDTHH:MM:SSZ</p>
+    </td>
+    </tr>
     <tr id="row5561142314513"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p823140914513"><a name="p823140914513"></a><a name="p823140914513"></a>status</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p5074995814513"><a name="p5074995814513"></a><a name="p5074995814513"></a>string</p>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p5074995814513"><a name="p5074995814513"></a><a name="p5074995814513"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p5875536214030"><a name="p5875536214030"></a><a name="p5875536214030"></a>API 版本的状态。其值为：</p>
-    <a name="ul7010819214058"></a><a name="ul7010819214058"></a><ul id="ul7010819214058"><li>当前版本：当前API使用的首选版本。</li><li>支持版本：以前的版本, 但仍然支持的当前API使用。</li><li>弃用版本：当前API将要删除弃用的版本。</li></ul>
+    <a name="ul7010819214058"></a><a name="ul7010819214058"></a><ul id="ul7010819214058"><li>CURRENT：当前API使用的首选版本。</li><li>SUPPORTED：表示该版本为老版本，但当前还在继续支持。</li><li>DEPRECATED：表示该版本为废弃版本，存在后续删除的可能。</li></ul>
     </td>
     </tr>
     <tr id="row1598568214513"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p1977187214513"><a name="p1977187214513"></a><a name="p1977187214513"></a>links</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p182455114513"><a name="p182455114513"></a><a name="p182455114513"></a>array</p>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p182455114513"><a name="p182455114513"></a><a name="p182455114513"></a>Array of objects</p>
     </td>
-    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p26535624151532"><a name="p26535624151532"></a><a name="p26535624151532"></a>共享链接。</p>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p26535624151532"><a name="p26535624151532"></a><a name="p26535624151532"></a>共享链接。参见links字段说明。</p>
     </td>
     </tr>
     <tr id="row5502948014513"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p2820292414513"><a name="p2820292414513"></a><a name="p2820292414513"></a>media-types</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p2024960914513"><a name="p2024960914513"></a><a name="p2024960914513"></a>object</p>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p2024960914513"><a name="p2024960914513"></a><a name="p2024960914513"></a>Array of objects</p>
     </td>
-    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p2960561814513"><a name="p2960561814513"></a><a name="p2960561814513"></a>API支持的媒介类型。</p>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p2960561814513"><a name="p2960561814513"></a><a name="p2960561814513"></a>API支持的媒介类型，参见media-types<span>字段说明</span>。</p>
     </td>
     </tr>
     <tr id="row6512397414513"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p4055052114513"><a name="p4055052114513"></a><a name="p4055052114513"></a>version</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p3243232014513"><a name="p3243232014513"></a><a name="p3243232014513"></a>string</p>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p3243232014513"><a name="p3243232014513"></a><a name="p3243232014513"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p977226014513"><a name="p977226014513"></a><a name="p977226014513"></a>如果当前版本的API支持microversions，此处为支持的microversion的最大版本。如果不支持microversions，这将会是空字符串。</p>
     </td>
     </tr>
     <tr id="row2084148314513"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p1043858314513"><a name="p1043858314513"></a><a name="p1043858314513"></a>min_version</p>
     </td>
-    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p3650774114513"><a name="p3650774114513"></a><a name="p3650774114513"></a>string</p>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p3650774114513"><a name="p3650774114513"></a><a name="p3650774114513"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p433706314513"><a name="p433706314513"></a><a name="p433706314513"></a>如果当前版本的API支持microversions, 此处为支持的microversion的最小版本。如果不支持microversions, 这将会是空字符串。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+-   links字段说明：
+
+    <a name="table1185748131212"></a>
+    <table><thead align="left"><tr id="row085184881214"><th class="cellrowborder" valign="top" width="20%" id="mcps1.1.4.1.1"><p id="p1385548131216"><a name="p1385548131216"></a><a name="p1385548131216"></a>参数</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="22.36%" id="mcps1.1.4.1.2"><p id="p185548181220"><a name="p185548181220"></a><a name="p185548181220"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="57.64%" id="mcps1.1.4.1.3"><p id="p785124815128"><a name="p785124815128"></a><a name="p785124815128"></a>描述</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row128510489127"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p78554816123"><a name="p78554816123"></a><a name="p78554816123"></a>href</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p186174811210"><a name="p186174811210"></a><a name="p186174811210"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p88674821214"><a name="p88674821214"></a><a name="p88674821214"></a>API接口访问路径，作为参考。</p>
+    </td>
+    </tr>
+    <tr id="row164131834144"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p204134351411"><a name="p204134351411"></a><a name="p204134351411"></a>type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p1262491711519"><a name="p1262491711519"></a><a name="p1262491711519"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p1541415316146"><a name="p1541415316146"></a><a name="p1541415316146"></a>参考接口返回的信息文本类型。</p>
+    </td>
+    </tr>
+    <tr id="row16345199111417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p63455931416"><a name="p63455931416"></a><a name="p63455931416"></a>rel</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p1734579161412"><a name="p1734579161412"></a><a name="p1734579161412"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p14346998145"><a name="p14346998145"></a><a name="p14346998145"></a>链接附加描述。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+-   media-types字段说明：
+
+    <a name="table148711510121316"></a>
+    <table><thead align="left"><tr id="row1487161011312"><th class="cellrowborder" valign="top" width="20%" id="mcps1.1.4.1.1"><p id="p18872111011139"><a name="p18872111011139"></a><a name="p18872111011139"></a>参数</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="22.36%" id="mcps1.1.4.1.2"><p id="p987201014133"><a name="p987201014133"></a><a name="p987201014133"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="57.64%" id="mcps1.1.4.1.3"><p id="p287281016132"><a name="p287281016132"></a><a name="p287281016132"></a>描述</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row1587241013138"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p198721410151320"><a name="p198721410151320"></a><a name="p198721410151320"></a>base</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p118721210111310"><a name="p118721210111310"></a><a name="p118721210111310"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p087261031310"><a name="p087261031310"></a><a name="p087261031310"></a>文本基础类型。</p>
+    </td>
+    </tr>
+    <tr id="row1470713171416"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.1.4.1.1 "><p id="p3470141381410"><a name="p3470141381410"></a><a name="p3470141381410"></a>type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.36%" headers="mcps1.1.4.1.2 "><p id="p114701613111411"><a name="p114701613111411"></a><a name="p114701613111411"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.64%" headers="mcps1.1.4.1.3 "><p id="p6470121319141"><a name="p6470121319141"></a><a name="p6470121319141"></a>文本类型。</p>
     </td>
     </tr>
     </tbody>
@@ -145,7 +221,7 @@
 
 -   正常
 
-    202、300
+    300
 
 -   异常
 
