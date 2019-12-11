@@ -11,7 +11,7 @@
 ## 配置流程<a name="section203761746155216"></a>
 
 1.  整理好网站文件。
-2.  登录SFS控制台，创建一个SFS Turbo文件系统用于存放网站文件。
+2.  登录弹性文件服务控制台，创建一个SFS Turbo文件系统用于存放网站文件。
 3.  登录作为计算节点的云服务器，挂载文件系统。
 4.  通过头节点将需要上传的网站文件上传到挂载的文件系统。
 5.  启动Web Server。
@@ -24,10 +24,13 @@
 
 ## 配置参考<a name="section1036721911570"></a>
 
-1.  登录管理控制台，选择“弹性文件服务”。
+1.  登录弹性文件服务管理控制台。
 2.  在页面右上角单击“创建文件系统“。
 3.  在创建文件系统页面，根据界面提示配置参数。
-4.  配置完成后，单击“立即创建”，完成文件系统创建。Linux系统的弹性云服务器挂载步骤参见[挂载NFS文件系统到云服务器（Linux）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0034428728.html)，Windows系统请参见[挂载NFS文件系统到云服务器（Windows）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0105224109.md)和[挂载CIFS文件系统到云服务器（Windows）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0151246279.html)。
+4.  配置完成后，单击“立即创建”，完成文件系统创建。
+
+    Linux系统ECS挂载操作请参见[挂载NFS文件系统到云服务器（Linux）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0034428728.html)；Windows系统ECS挂载操作请参见[挂载NFS文件系统到云服务器（Windows）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0105224109.html)和[挂载CIFS文件系统到云服务器（Windows）](https://support.huaweicloud.com/qs-sfs/zh-cn_topic_0151246279.html)。
+
 5.  登录头节点将需要上传的网站文件上传到挂载的文件系统。
 6.  启动Web Server。
 

@@ -27,7 +27,7 @@ Linux操作系统的弹性云服务器默认只能通过root帐号使用mount命
 3.  切换到普通用户Mike登录弹性云服务器。
 4.  执行如下命令挂载文件系统。挂载参数参见[表1](#table0741121164416)。
 
-    **mount -t nfs -o vers=3,timeo=600,nolock** _共享路径_ _本地路径_
+    **mount -t nfs -o vers=3,timeo=600,noresvport,nolock** _共享路径_ _本地路径_
 
     **表 1**  参数说明
 

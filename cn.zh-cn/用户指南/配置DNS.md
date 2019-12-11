@@ -73,7 +73,7 @@ DNS服务器用于解析弹性文件服务中文件系统的域名。DNS服务�
 
 6.  在弹出的“Internet 协议版本 4 \(TCP/IPv4\)属性“对话框中，选择“使用下面的DNS服务器地址“，如[图6](#fig82464042713)所示，根据需要配置DNS。DNS服务器东北区IP地址为100.125.6.250，其它区域详情请参见[华为云内网DNS地址](https://support.huaweicloud.com/dns_faq/dns_faq_002.html)。配置完成后，单击“确定“，完成配置。
 
-    **图 6**  配置DNS<a name="fig82464042713"></a>  
-    ![](figures/配置DNS-0.png "配置DNS-0")
+    **图 6**  Windows系统配置DNS<a name="fig82464042713"></a>  
+    ![](figures/Windows系统配置DNS.png "Windows系统配置DNS")
 
 

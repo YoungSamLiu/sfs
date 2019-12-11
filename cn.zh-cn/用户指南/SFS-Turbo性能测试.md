@@ -53,7 +53,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 </td>
 <td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p147696411323"><a name="p147696411323"></a><a name="p147696411323"></a>5000</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p776964123213"><a name="p776964123213"></a><a name="p776964123213"></a>30000</p>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p776964123213"><a name="p776964123213"></a><a name="p776964123213"></a>20000</p>
 </td>
 </tr>
 <tr id="row176912453218"><td class="cellrowborder" valign="top" width="24.771012931034488%" headers="mcps1.2.4.1.1 "><p id="p376964113212"><a name="p376964113212"></a><a name="p376964113212"></a>最大吞吐量</p>
@@ -67,7 +67,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 </td>
 <td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p73761737193320"><a name="p73761737193320"></a><a name="p73761737193320"></a>IOPS = min (5000, 1200 + 6 × 容量)</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p737643723316"><a name="p737643723316"></a><a name="p737643723316"></a>IOPS = min (30000, 1500 + 50 × 容量)</p>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p737643723316"><a name="p737643723316"></a><a name="p737643723316"></a>IOPS = min (20000, 1500 + 50 × 容量)</p>
 </td>
 </tr>
 </tbody>
@@ -77,10 +77,10 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 单个文件系统IOPS性能 =“最大IOPS”与“基线IOPS + 每GB文件系统的IOPS × 文件系统容量”的最小值。
 
-以SFS Turbo性能型文件系统为例，单个SFS Turbo性能型文件系统的最大IOPS为30000。
+以SFS Turbo性能型文件系统为例，单个SFS Turbo性能型文件系统的最大IOPS为20000。
 
--   假如SFS Turbo性能型文件系统容量为100 GB，则该文件系统IOPS性能 = min \(30000, 1500 + 50 × 100 \)，取30000与6500中的最小值，即该文件系统的IOPS性能为6500。
--   假如SFS Turbo性能型文件系统容量为1000 GB，则该文件系统IOPS性能 = min \(30000, 1500 + 50 × 1000 \)，取30000与51500中的最小值，即该文件系统的IOPS性能为30000。
+-   假如SFS Turbo性能型文件系统容量为100 GB，则该文件系统IOPS性能 = min \(20000, 1500 + 50 × 100 \)，取20000与6500中的最小值，即该文件系统的IOPS性能为6500。
+-   假如SFS Turbo性能型文件系统容量为1000 GB，则该文件系统IOPS性能 = min \(20000, 1500 + 50 × 1000 \)，取20000与51500中的最小值，即该文件系统的IOPS性能为20000。
 
 ## 通用测试配置样例<a name="section4601617717"></a>
 
