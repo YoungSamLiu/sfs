@@ -11,15 +11,15 @@
 
 ## 前提条件<a name="section19578184675710"></a>
 
--   “SFS Viewer”属于策略，请先在IAM控制台中开通细粒度策略，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
--   给用户组授权之前，请您了解用户组可以添加的SFS系统策略，并结合实际需求进行选择，SFS支持的系统策略及策略间的对比，请参见：[SFS系统权限](https://support.huaweicloud.com/productdesc-sfs/sfs-01-00000003.html)。若您需要对除SFS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/usermanual-permissions/zh-cn_topic_0063498930.html)。
+-   “SFS ReadOnlyAccess”属于策略，请先在IAM控制台中开通细粒度策略，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
+-   给用户组授权之前，请您了解用户组可以添加的SFS系统策略，并结合实际需求进行选择，SFS支持的系统策略及策略间的对比，请参见：[SFS系统权限](https://support.huaweicloud.com/productdesc-sfs/sfs-01-00000003.html)。若您需要对除SFS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/permissions/policy_list.html?product=sfs)。
 
 ## 使用限制<a name="section1016916187178"></a>
 
 -   SFS文件系统适用于所有的SFS系统策略，以及创建的自定义策略。
 -   SFS Turbo文件系统当前仅适用于以下系统策略，不支持创建的自定义策略。
 
-    系统策略：SFS Viewer，SFS Turbo文件系统只读权限；SFS Administrator+VPC Admin，创建、修改、删除、查询SFS Turbo文件系统。
+    系统策略：SFS ReadOnlyAccess，SFS Turbo文件系统只读权限；SFS Administrator+VPC FullAccess，创建、修改、删除、查询SFS Turbo文件系统。
 
 
 ## 示例流程<a name="section142281352125915"></a>
@@ -29,7 +29,7 @@
 
 1.  <a name="li539812235120"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611269.html)
 
-    在IAM控制台创建用户组，并授予弹性文件服务只读权限“SFS Viewer”。
+    在IAM控制台创建用户组，并授予弹性文件服务只读权限“SFS ReadOnlyAccess”。
 
 2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611303.html)
 
@@ -39,7 +39,7 @@
 
     新创建的用户登录控制台，切换至授权区域，验证权限：
 
-    -   在“服务列表”中选择弹性文件服务，进入SFS主界面，单击右上角“创建文件系统”，尝试创建文件系统，如果无法创建文件系统，表示“SFS Viewer”已生效。
-    -   在“服务列表”中选择除弹性文件服务外的任一服务，若提示权限不足，表示“SFS Viewer”已生效。
+    -   在“服务列表”中选择弹性文件服务，进入SFS主界面，单击右上角“创建文件系统”，尝试创建文件系统，如果无法创建文件系统，表示“SFS ReadOnlyAccess”已生效。
+    -   在“服务列表”中选择除弹性文件服务外的任一服务，若提示权限不足，表示“SFS ReadOnlyAccess”已生效。
 
 
