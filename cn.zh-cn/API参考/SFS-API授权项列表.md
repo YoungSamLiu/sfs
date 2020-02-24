@@ -65,6 +65,18 @@
 <p id="p16920172713564"><a name="p16920172713564"></a><a name="p16920172713564"></a><span>企业项目</span><span>(Enterprise Project)</span></p>
 </td>
 </tr>
+<tr id="row12500191118469"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.1.5.1.1 "><p id="p150014114468"><a name="p150014114468"></a><a name="p150014114468"></a>GET /v2/{project_id}/shares</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.1.5.1.2 "><p id="p105001411104618"><a name="p105001411104618"></a><a name="p105001411104618"></a>查询所有共享</p>
+<p id="p1567502915569"><a name="p1567502915569"></a><a name="p1567502915569"></a>（OpenStack原生）</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.38%" headers="mcps1.1.5.1.3 "><a name="ul1492452913549"></a><a name="ul1492452913549"></a><ul id="ul1492452913549"><li>sfs:shares:getShare</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="36.74%" headers="mcps1.1.5.1.4 "><a name="ul71111043145112"></a><a name="ul71111043145112"></a><ul id="ul71111043145112"><li>支持：</li></ul>
+<p id="p1011134365110"><a name="p1011134365110"></a><a name="p1011134365110"></a><span>项目</span><span>(Project)</span></p>
+<p id="p151118433519"><a name="p151118433519"></a><a name="p151118433519"></a><span>企业项目</span><span>(Enterprise Project)</span></p>
+</td>
+</tr>
 <tr id="row450081117466"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.1.5.1.1 "><p id="p165005111464"><a name="p165005111464"></a><a name="p165005111464"></a>GET /v2/{project_id}/shares/detail</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.1.5.1.2 "><p id="p450013117466"><a name="p450013117466"></a><a name="p450013117466"></a>查询所有共享详细信息</p>
