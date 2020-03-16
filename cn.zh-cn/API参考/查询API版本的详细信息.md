@@ -1,4 +1,4 @@
-# 查询API版本的详细信息<a name="ZH-CN_TOPIC_0171853662"></a>
+# 查询API版本的详细信息<a name="sfs_02_0019"></a>
 
 ## 功能介绍<a name="section922844914513"></a>
 

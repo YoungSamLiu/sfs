@@ -1,4 +1,4 @@
-# 修改共享Qos参数<a name="ZH-CN_TOPIC_0171853639"></a>
+# 修改共享Qos参数<a name="sfs_02_0048"></a>
 
 ## 功能介绍<a name="section10684447163819"></a>
 

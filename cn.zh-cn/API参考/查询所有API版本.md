@@ -1,4 +1,4 @@
-# 查询所有API版本<a name="ZH-CN_TOPIC_0171853658"></a>
+# 查询所有API版本<a name="sfs_02_0018"></a>
 
 ## 功能介绍<a name="section922844914513"></a>
 

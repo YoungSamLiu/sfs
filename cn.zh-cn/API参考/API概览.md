@@ -1,4 +1,4 @@
-# API概览<a name="ZH-CN_TOPIC_0171853674"></a>
+# API概览<a name="sfs_02_0007"></a>
 
 弹性文件服务所提供的接口分为SFS接口、SFS Turbo接口与OpenStack原生接口。
 

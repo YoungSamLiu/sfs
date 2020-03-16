@@ -1,4 +1,4 @@
-# SFS API授权项列表<a name="zh-cn_topic_0136979281"></a>
+# SFS API授权项列表<a name="sfs_02_0082"></a>
 
 ## 查询API版本<a name="section118729382365"></a>
 
