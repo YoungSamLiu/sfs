@@ -1,6 +1,6 @@
-# 创建SFS自定义策略<a name="sfs-01-00000021"></a>
+# 创建SFS自定义策略<a name="sfs_01_0033"></a>
 
-如果系统预置的SFS权限，不满足您的授权要求，可以创建自定义策略。自定义策略中可以添加的授权项（Action）请参考[策略及授权项说明](https://support.huaweicloud.com/api-sfs/zh-cn_topic_0136979281.html)。
+如果系统预置的SFS权限，不满足您的授权要求，可以创建自定义策略。自定义策略中可以添加的授权项（Action）请参考[权限及授权项说明](https://support.huaweicloud.com/api-sfs/sfs_02_0080.html)。
 
 目前华为云支持以下两种方式创建自定义策略：
 

@@ -1,4 +1,4 @@
-# 创建用户并授权使用SFS<a name="sfs-01-00000019"></a>
+# 创建用户并授权使用SFS<a name="sfs_01_0032"></a>
 
 如果您需要对您所拥有的SFS进行精细的权限管理，您可以使用统一身份认证服务（Identity and Access Management，简称IAM），通过IAM，您可以：
 
@@ -12,7 +12,7 @@
 ## 前提条件<a name="section19578184675710"></a>
 
 -   “SFS ReadOnlyAccess”属于策略，请先在IAM控制台中开通细粒度策略，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
--   给用户组授权之前，请您了解用户组可以添加的SFS系统策略，并结合实际需求进行选择，SFS支持的系统策略及策略间的对比，请参见：[SFS系统权限](https://support.huaweicloud.com/productdesc-sfs/sfs-01-00000003.html)。若您需要对除SFS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/permissions/policy_list.html?product=sfs)。
+-   给用户组授权之前，请您了解用户组可以添加的SFS系统策略，并结合实际需求进行选择，SFS支持的系统策略及策略间的对比，请参见：[SFS系统权限](https://support.huaweicloud.com/productdesc-sfs/sfs_01_0013.html)。若您需要对除SFS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/permissions/policy_list.html?product=sfs)。
 
 ## 使用限制<a name="section1016916187178"></a>
 
@@ -27,11 +27,11 @@
 **图 1**  给用户授权SFS权限流程<a name="fig625610403530"></a>  
 ![](figures/给用户授权SFS权限流程.png "给用户授权SFS权限流程")
 
-1.  <a name="li539812235120"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611269.html)
+1.  <a name="li539812235120"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
     在IAM控制台创建用户组，并授予弹性文件服务只读权限“SFS ReadOnlyAccess”。
 
-2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611303.html)
+2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
     在IAM控制台创建用户，并将其加入[1](#li539812235120)中创建的用户组。
 

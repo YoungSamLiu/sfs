@@ -1,4 +1,4 @@
-# 使用非root的普通用户挂载文件系统到Linux云服务器<a name="sfs_faq_00016"></a>
+# 使用非root的普通用户挂载文件系统到Linux云服务器<a name="sfs_01_0100"></a>
 
 ## 使用场景<a name="section15512154184412"></a>
 

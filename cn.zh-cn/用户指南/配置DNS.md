@@ -1,4 +1,4 @@
-# 配置DNS<a name="ZH-CN_TOPIC_0054116434"></a>
+# 配置DNS<a name="sfs_01_0038"></a>
 
 DNS服务器用于解析弹性文件服务中文件系统的域名。DNS服务器东北区IP地址为100.125.6.250，其它区域详情请参见[华为云内网DNS地址](https://support.huaweicloud.com/dns_faq/dns_faq_002.html)。
 

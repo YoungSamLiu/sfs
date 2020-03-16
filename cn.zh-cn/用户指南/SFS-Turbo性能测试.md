@@ -1,4 +1,4 @@
-# SFS Turbo性能测试<a name="ZH-CN_TOPIC_0161965076"></a>
+# SFS Turbo性能测试<a name="sfs_01_0099"></a>
 
 fio是一个开源的I/O压力测试工具，可以使用 fio工具对SFS进行吞吐量和 IOPS的性能测试。
 
