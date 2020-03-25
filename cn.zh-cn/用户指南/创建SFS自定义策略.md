@@ -7,7 +7,7 @@
 -   可视化视图创建自定义策略：无需了解策略语法，按可视化视图导航栏选择云服务、操作、资源、条件等策略内容，可自动生成策略。
 -   JSON视图创建自定义策略：可以在选择策略模板后，根据具体需求编辑策略内容；也可以直接在编辑框内编写JSON格式的策略内容。
 
-具体创建步骤请参见：[创建自定义策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0605.html)。本章为您介绍常用的SFS自定义策略样例。
+具体创建步骤请参见：[创建自定义策略](https://support.huaweicloud.com/zh-cn/usermanual-iam/iam_01_0605.html)。本章为您介绍常用的SFS自定义策略样例。
 
 ## 使用限制<a name="section8585832205518"></a>
 
