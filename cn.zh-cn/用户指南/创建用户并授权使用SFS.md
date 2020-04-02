@@ -11,8 +11,7 @@
 
 ## 前提条件<a name="section19578184675710"></a>
 
--   “SFS ReadOnlyAccess”属于策略，请先在IAM控制台中开通细粒度策略，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
--   给用户组授权之前，请您了解用户组可以添加的SFS系统策略，并结合实际需求进行选择，SFS支持的系统策略及策略间的对比，请参见：[SFS系统权限](https://support.huaweicloud.com/productdesc-sfs/sfs_01_0013.html)。若您需要对除SFS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/permissions/policy_list.html?product=sfs)。
+给用户组授权之前，请您了解用户组可以添加的SFS系统策略，并结合实际需求进行选择，SFS支持的系统策略及策略间的对比，请参见：[SFS系统权限](https://support.huaweicloud.com/productdesc-sfs/sfs_01_0013.html)。若您需要对除SFS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/permissions/policy_list.html?product=sfs)。
 
 ## 使用限制<a name="section1016916187178"></a>
 
