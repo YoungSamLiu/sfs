@@ -67,7 +67,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 </td>
 <td class="cellrowborder" valign="top" width="37.796336206896555%" headers="mcps1.2.4.1.2 "><p id="p73761737193320"><a name="p73761737193320"></a><a name="p73761737193320"></a>IOPS = min (5000, 1200 + 6 × 容量)</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p737643723316"><a name="p737643723316"></a><a name="p737643723316"></a>IOPS = min (20000, 1500 + 50 × 容量)</p>
+<td class="cellrowborder" valign="top" width="37.43265086206897%" headers="mcps1.2.4.1.3 "><p id="p737643723316"><a name="p737643723316"></a><a name="p737643723316"></a>IOPS = min (20000, 1500 + 20 × 容量)</p>
 </td>
 </tr>
 </tbody>
@@ -79,10 +79,13 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 以SFS Turbo性能型文件系统为例，单个SFS Turbo性能型文件系统的最大IOPS为20000。
 
--   假如SFS Turbo性能型文件系统容量为100 GB，则该文件系统IOPS性能 = min \(20000, 1500 + 50 × 100 \)，取20000与6500中的最小值，即该文件系统的IOPS性能为6500。
--   假如SFS Turbo性能型文件系统容量为1000 GB，则该文件系统IOPS性能 = min \(20000, 1500 + 50 × 1000 \)，取20000与51500中的最小值，即该文件系统的IOPS性能为20000。
+-   假如SFS Turbo性能型文件系统容量为500 GB，则该文件系统IOPS性能 = min \(20000, 1500 + 20 × 500 \)，取20000与11500中的最小值，即该文件系统的IOPS性能为11500。
+-   假如SFS Turbo性能型文件系统容量为1000 GB，则该文件系统IOPS性能 = min \(20000, 1500 + 20 × 1000 \)，取20000与21500中的最小值，即该文件系统的IOPS性能为20000。
 
 ## 通用测试配置样例<a name="section4601617717"></a>
+
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>以下提供的预估值为单台弹性云服务器ECS测试的结果。建议使用多台ECS测试，以达到[弹性文件服务](https://www.huaweicloud.com/product/sfs.html)的性能指标。  
 
 本文以SFS Turbo性能型，云服务器规格如下为例说明。
 
@@ -101,7 +104,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 -   fio结果：
 
-    ![](figures/性能测试7比3.png)
+    ![](figures/zh-cn_image_0252817028.jpg)
 
 
 **混合读写，读写比例3:7**
@@ -115,7 +118,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 -   fio结果：
 
-    ![](figures/性能测试3比7.png)
+    ![](figures/zh-cn_image_0252817059.jpg)
 
 
 **读IOPS**
@@ -129,7 +132,8 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 -   fio结果：
 
-![](figures/性能测试读IOPS.png)
+    ![](figures/zh-cn_image_0252817041.jpg)
+
 
 **写IOPS**
 
@@ -142,7 +146,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 -   fio结果：
 
-    ![](figures/性能测试写IOPS.png)
+    ![](figures/zh-cn_image_0252817631.jpg)
 
 
 **读带宽**
@@ -156,7 +160,7 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 -   fio结果：
 
-    ![](figures/性能测试读带宽.png)
+    ![](figures/zh-cn_image_0252817648.jpg)
 
 
 **写带宽**
@@ -170,6 +174,6 @@ SFS Turbo文件系统的性能主要有IOPS和吞吐量等指标，具体各指�
 
 -   fio结果：
 
-    ![](figures/性能测试写带宽.png)
+    ![](figures/zh-cn_image_0252817772.jpg)
 
 

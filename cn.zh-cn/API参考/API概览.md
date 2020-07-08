@@ -8,9 +8,9 @@ SFS接口调用频率限制为：400次/分钟。若您需要调用的接口较�
 
 本服务接口，与mitaka版本的openstack组件manila部分接口相同，相关接口使用方式也可以参考开源社区接口说明，链接地址：
 
-[https://developer.openstack.org/api-ref/shared-file-systems](https://developer.openstack.org/api-ref/shared-file-systems)。
+[https://docs.openstack.org/api-ref/shared-file-system/](https://docs.openstack.org/api-ref/shared-file-system/)。
 
-使用企业项目功能时，关于SFS API 接口是否支持企业项目，请参考[API授权项列表](SFS-API授权项列表.md)。
+使用企业项目功能时，关于SFS API 接口是否支持企业项目，请参考[API授权项列表](SFS授权项分类.md)。
 
 **当本文描述内容与上述开源社区的描述不一致时，请以本文描述为准。**
 

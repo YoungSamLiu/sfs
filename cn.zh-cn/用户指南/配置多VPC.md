@@ -18,14 +18,14 @@ VPC可以通过网络ACL进行访问控制。网络ACL是对一个或多个子�
 
 1.  登录弹性文件服务管理控制台。
 2.  在文件系统列表中单击目标文件系统名称，进入授权VPC界面。
-3.  如果没有可用的VPC，需要先申请VPC。可以为文件系统添加多个VPC，单击“添加VPC”，弹出“添加VPC”对话框。如[图1](#fig625115289418)所示。
+3.  如果没有可用的VPC，需要先申请VPC。可以为文件系统添加多个VPC，单击“添加VPC“，弹出“添加VPC“对话框。如[图1](#fig625115289418)所示。
 
     可以在下拉列表中选中多个VPC。
 
     **图 1**  添加VPC<a name="fig625115289418"></a>  
     ![](figures/添加VPC.png "添加VPC")
 
-4.  单击“确定“，完成添加。添加成功的VPC会出现在列表中，添加VPC时会自动添加默认IP地址0.0.0.0/0，默认读写权限为“读/写”，默认用户权限为“no\_all\_squash”，默认用户root权限为“no\_root\_squash”。
+4.  单击“确定“，完成添加。添加成功的VPC会出现在列表中，添加VPC时会自动添加默认IP地址0.0.0.0/0，默认读写权限为“读写”，默认用户权限为“no\_all\_squash”，默认用户root权限为“no\_root\_squash”。
 5.  在VPC列表下可以看到所有添加的VPC的信息，参数说明如[表1](#table99851739124510)所示。
 
     **表 1**  参数说明
@@ -76,7 +76,7 @@ VPC可以通过网络ACL进行访问控制。网络ACL是对一个或多个子�
     </tr>
     <tr id="row144285465480"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.3.1.1 "><p id="p4428946144813"><a name="p4428946144813"></a><a name="p4428946144813"></a>读或写权限</p>
     </td>
-    <td class="cellrowborder" valign="top" width="75%" headers="mcps1.2.3.1.2 "><p id="p144281746204810"><a name="p144281746204810"></a><a name="p144281746204810"></a>分为读/写权限和只读权限。默认为“读/写”。</p>
+    <td class="cellrowborder" valign="top" width="75%" headers="mcps1.2.3.1.2 "><p id="p144281746204810"><a name="p144281746204810"></a><a name="p144281746204810"></a>分为读写权限和只读权限。默认为“读写”。</p>
     </td>
     </tr>
     <tr id="row4428104634818"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.3.1.1 "><p id="p242894610484"><a name="p242894610484"></a><a name="p242894610484"></a>用户权限</p>

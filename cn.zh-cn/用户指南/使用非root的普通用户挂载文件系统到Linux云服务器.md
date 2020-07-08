@@ -8,7 +8,7 @@ Linux操作系统的弹性云服务器默认只能通过root帐号使用mount命
 
 -   云服务器中已创建非root的普通用户。
 -   已创建文件系统，并能通过root帐号成功挂载到云服务器上。
--   已获取到文件系统的共享路径。
+-   已获取到文件系统的挂载地址。
 
 ## 操作步骤<a name="section72201550134310"></a>
 
@@ -27,7 +27,7 @@ Linux操作系统的弹性云服务器默认只能通过root帐号使用mount命
 3.  切换到普通用户Mike登录弹性云服务器。
 4.  执行如下命令挂载文件系统。挂载参数参见[表1](#table0741121164416)。
 
-    **mount -t nfs -o vers=3,timeo=600,noresvport,nolock** _共享路径_ _本地路径_
+    **mount -t nfs -o vers=3,timeo=600,noresvport,nolock** _挂载地址_ _本地路径_
 
     **表 1**  参数说明
 
@@ -38,11 +38,11 @@ Linux操作系统的弹性云服务器默认只能通过root帐号使用mount命
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row074372114417"><td class="cellrowborder" valign="top" width="17.080000000000002%" headers="mcps1.2.3.1.1 "><p id="p13301182412477"><a name="p13301182412477"></a><a name="p13301182412477"></a>共享路径</p>
+    <tbody><tr id="row074372114417"><td class="cellrowborder" valign="top" width="17.080000000000002%" headers="mcps1.2.3.1.1 "><p id="p13301182412477"><a name="p13301182412477"></a><a name="p13301182412477"></a>挂载地址</p>
     </td>
     <td class="cellrowborder" valign="top" width="82.92%" headers="mcps1.2.3.1.2 "><p id="p173036243476"><a name="p173036243476"></a><a name="p173036243476"></a>SFS文件系统的格式为：文件系统域名:/路径，例如：example.com:/share-xxx。SFS Turbo文件系统的格式为：文件系统IP:/，例如192.168.0.0:/。</p>
     <div class="note" id="note1931112414478"><a name="note1931112414478"></a><a name="note1931112414478"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p12312112413478"><a name="p12312112413478"></a><a name="p12312112413478"></a>x是数字或字母。</p>
-    <p id="p203122243478"><a name="p203122243478"></a><a name="p203122243478"></a>由于共享路径名称较长，需要拉宽该栏以便完整显示。</p>
+    <p id="p203122243478"><a name="p203122243478"></a><a name="p203122243478"></a>由于挂载地址名称较长，需要拉宽该栏以便完整显示。</p>
     </div></div>
     </td>
     </tr>
