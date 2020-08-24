@@ -10,8 +10,8 @@
 
 微版本号：通过Http请求头“X-Openstack-Manila-Api-Version：微版本号”来使用，例如：X-Openstack-Manila-Api-Version：2.4
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->该接口无需鉴权。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>该接口无需鉴权。
 
 ## URI<a name="section1665327514513"></a>
 
