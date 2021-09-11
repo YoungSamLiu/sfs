@@ -11,7 +11,7 @@
 
 ## 使用限制<a name="section8585832205518"></a>
 
-因SFS Turbo文件系统不支持系统策略，所以创建的SFS自定义策略仅对SFS文件系统有效，对SFS Turbo文件系统无效。
+创建的SFS自定义策略仅对SFS容量型文件系统有效，对SFS Turbo文件系统无效。
 
 ## SFS自定义策略样例<a name="section2835114813515"></a>
 
